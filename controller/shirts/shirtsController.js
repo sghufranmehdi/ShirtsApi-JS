@@ -18,7 +18,7 @@ module.exports = {
   },
 
   updateShirt: (req, res) => {
-    const data = shirtsService.updateShirt(req.params.id);
+    const data = shirtsService.updateShirt(req.params.id, req.body);
     res.send(data);
   },
   deleteShirt: (req, res) => {
